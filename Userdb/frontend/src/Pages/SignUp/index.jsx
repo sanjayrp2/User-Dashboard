@@ -53,7 +53,7 @@ const handleSubmit =async(e)=>{
 }
   return (
     <>
-    <div className="flex items-center justify-center h-screen bg-gray-100">
+    <div className="flex items-center justify-center h-screen bg-gray-200">
         <ToastContainer/>
       <form className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md" onSubmit={handleSubmit}>
         <h1 className="text-2xl font-bold mb-6 text-center">Sign Up</h1>
@@ -81,7 +81,7 @@ const handleSubmit =async(e)=>{
         </div>
         
         <div className="mb-4">
-          <label className="block text-gray-700">Password</label>
+          <label className="block text-gray-700 ">Password</label>
           <input
             type="password"
             name="password"
@@ -92,7 +92,7 @@ const handleSubmit =async(e)=>{
         </div>
         
         <div className="mb-4">
-          <label className="block text-gray-700">Confirm Password</label>
+          <label className="block text-gray-700 ">Confirm Password</label>
           <input
             type="password"
             name="confirmPassword"
