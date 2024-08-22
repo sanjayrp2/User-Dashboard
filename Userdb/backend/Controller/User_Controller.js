@@ -57,7 +57,7 @@ module.exports.UserLogin=async(req,res)=>{
             await user.save(); 
             const token = jwt.sign({ id: user._id, role: role }, SECRETE_KEY,{ expiresIn: '8h' });
             const formattedLastLoginDate = moment(user.lastlogindate).format('YYYY-MM-DD HH:mm:ss');
-            return res.json({status:"ok",role:user.role,email:user.email,token:token,lastlogindate:formattedLastLoginDate,count:user.count})
+            return res.json({status:"ok",role:user.role,email:user.email,name:user.name,gender:user.gender,token:token,lastlogindate:formattedLastLoginDate,count:user.count})
         }
         else{
             return res.json({status:"error",error:"Invalid Password"})

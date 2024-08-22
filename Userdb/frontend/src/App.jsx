@@ -1,7 +1,7 @@
 import {BrowserRouter as Router , Routes, Route} from "react-router-dom"
 import Login from "./Pages/Login"
 import Signup from "./Pages/SignUp";
-import { RoleContext } from "./Context/Rolecontext"; 
+import { RoleContext } from "./Context/RoleContext"; 
 import adminRoutes from "./Route/adminRoutes";
 import userRoutes from "./Route/userRoutes"
 import { useEffect, useState } from "react";
@@ -34,13 +34,12 @@ function App() {
             key={index}
             path={route.path}
             element={
-              
                 route.element
             }
           />
         ))}
-      </Routes>
-    </Router>
+        </Routes>
+      </Router>
     </RoleContext.Provider>
     
     </>

@@ -1,6 +1,7 @@
-import Home from "../Pages/Home";
+import React from "react";
+import Dashboard from "../Pages/Dashboard";
 
 const adminRoutes=[
-    {path:'/', element:<Home/>}
+    {path:'/dash', element:<Dashboard/>}
 ];
 export default adminRoutes;
